@@ -1,0 +1,14 @@
+.home {
+  width: 100%;
+  padding: $pagePadding;
+
+  .logo {
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
