@@ -1,7 +1,8 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    margin: 0 auto;
 
     label, input, textarea {
         font-size: 18px;

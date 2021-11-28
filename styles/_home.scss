@@ -2,7 +2,10 @@
 
 .home {
     width: 100%;
+    max-width: 1400px;
     padding: $pagePadding;
+    margin: 0 auto;
+    margin-bottom: 4rem;
     
     &__logo {
         width: 20rem;
@@ -10,7 +13,33 @@
         margin: 0 auto;
     
         img {
-        width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        margin-top: 4rem;
+        @include tablet-down {
+            flex-direction: column;
+        }
+
+        .home-header {
+            font-size: 20px;
+            width: 50%;
+            padding-right: 3rem;
+
+            h1 {
+                font-size: 40px;
+                @include tablet-down {
+                    font-size: 30px;
+                }
+            }
+
+            @include tablet-down {
+                padding-right: 0;
+                width: 100%;
+            }
         }
     }
 }

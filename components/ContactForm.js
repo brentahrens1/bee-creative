@@ -16,7 +16,7 @@ export default function ContactForm() {
                 <input type="text" name="last-name" placeholder="Last Name" />
             </div>
             <label>Email</label>
-            <input type="email" name="last-name" placeholder="Last Name" />
+            <input type="email" name="last-name" />
             <label>Let it all out. We're here for you.</label>
             <textarea rows="8" cols="50"></textarea>
             <input type="submit" value="Godspeed" />

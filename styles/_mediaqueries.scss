@@ -30,13 +30,13 @@ $screen-desktop: 1280px;
     }
 }
 
-@mixin mobile-up {
-    @media (min-width: #{$screen-tablet-portrait}) {
+@mixin mobile-down {
+    @media (max-width: #{$screen-tablet-portrait}) {
         @content;
     }
 }
 
-@mixin tablet-less {
+@mixin tablet-down {
     @media (max-width: #{$screen-tablet-landscape-less}) {
         @content;
     }
