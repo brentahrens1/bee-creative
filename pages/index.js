@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import ContactForm from '../components/contact-form'
+
 export default function Home() {
   return (
     <div className="main-container">
@@ -14,6 +16,7 @@ export default function Home() {
         <div className="home__logo">
           <img src='/images/beecat-logo.jpg' alt="BeeCat Creative | Logo" />
         </div>
+        <ContactForm />
       </main>
     </div>
   )
