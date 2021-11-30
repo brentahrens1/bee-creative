@@ -16,3 +16,32 @@ a {
 body {
   font-family: sans-serif;
 }
+
+@font-face {
+  font-family: "labrador-bold";
+  src: url("/fonts/labrador-bold.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "labrador-light";
+  src: url("/fonts/labrador-light.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rust-base";
+  src: url("/fonts/rust-base.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}

@@ -2,13 +2,13 @@
 
 .home {
     width: 100%;
-    max-width: 1400px;
-    padding: $pagePadding;
+    min-height: 100vh;
+    padding: 2rem;
     margin: 0 auto;
-    margin-bottom: 4rem;
+    background-color: #B7E5E1;
     
     &__logo {
-        width: 20rem;
+        width: 23rem;
         display: block;
         margin: 0 auto;
     
@@ -19,20 +19,49 @@
 
     &__inner {
         display: flex;
-        margin-top: 4rem;
-        @include tablet-down {
-            flex-direction: column;
-        }
+        flex-direction: column;
+        margin-top: 2rem;
 
         .home-header {
             font-size: 20px;
-            width: 50%;
-            padding-right: 3rem;
+            width: 100%;
+            text-align: center;
 
-            h1 {
-                font-size: 40px;
+            .bold-header {
+                font-family: "rust-base";
+                font-size: 60px;
+                @include tablet-down {
+                    font-size: 40px;
+                }
+            }
+
+            .bold-header-2 {
+                font-family: "labrador-bold";
+                font-size: 45px;
+                text-transform: uppercase;
                 @include tablet-down {
                     font-size: 30px;
+                }
+            }
+
+            .divider {
+                height: 6px;
+                width: 45rem;
+                margin: 2rem auto;
+                background-color: #000000;
+                @include tablet-down {
+                    margin: 1rem auto;
+                    width: 90%;
+                }
+            }
+
+            .light-header {
+                font-family: "labrador-light";
+                font-size: 55px;
+                line-height: 45px;
+                @include tablet-down {
+                    font-size: 30px;
+                    line-height: 35px;
                 }
             }
 

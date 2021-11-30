@@ -14,14 +14,15 @@ export default function Home() {
 
       <main className="home">
         <div className="home__logo">
-          <img src='/images/beecat-logo.jpg' alt="BeeCat Creative | Logo" />
+          <img src='/images/beecat-logo.png' alt="BeeCat Creative | Logo" />
         </div>
         <div className="home__inner">
           <div className="home-header">
-            <h1>Having a creative block?</h1>
-            <h1>Don’t know who or what an algorithm is?</h1>
-            <h1>Need a second set of eyes on your Tik Tok choreography?</h1>
-            <h1>Contact us today.</h1>
+            <h1 className="bold-header">The hype is real</h1>
+            <h2 className="bold-header-2">Website coming soon</h2>
+            <div className="divider"></div>
+            <h1 className="light-header">We're not "here" but we're still "here".</h1>
+            <h1 className="light-header">Drop us a line.</h1>
           </div>
           <div className="home-form">
             <ContactForm />
