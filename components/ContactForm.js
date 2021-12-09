@@ -40,7 +40,7 @@ export default function ContactForm() {
                   type="email" 
                   name="email" 
                 />
-                <label>Let it all out. We're here for you.</label>
+                <label>Let it all out. We&apos;re here for you.</label>
                 <textarea 
                   type="text"
                   rows="8" 
@@ -52,7 +52,8 @@ export default function ContactForm() {
           </form>
         :
           <div className="success">
-            <h1>Thanks for reaching out. We'll get back to you soon.</h1>
+            <h1>Did you know the moon has moonquakes? Weird.</h1>
+            <h1>Your message is currently traveling through time and space. Destination: our inbox. So be on the lookout for our BeeCat signal… ahem, email</h1>
           </div>
       }
     </>

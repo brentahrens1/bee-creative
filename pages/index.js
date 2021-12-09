@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
 import ContactForm from '../components/ContactForm'
 
 export default function Home() {
+
   return (
     <div className="main-container">
       <Head>
@@ -14,18 +14,23 @@ export default function Home() {
 
       <main className="home">
         <div className="home__logo">
-          <img src='/images/beecat-logo.png' alt="BeeCat Creative | Logo" />
+          <Image width={600} height={280} layout="responsive" priority={true} src='/images/beecat-logo.png' alt="BeeCat Creative | Logo" />
         </div>
         <div className="home__inner">
-          <div className="home-header">
-            <h1 className="bold-header">The hype is real</h1>
-            <h2 className="bold-header-2">Website coming soon</h2>
-            <div className="divider"></div>
-            <h1 className="light-header">We're not "here" but we're still "here".</h1>
-            <h1 className="light-header">Drop us a line.</h1>
+          <div className="home-clock">
+            <Image width={600} height={630} layout="responsive" priority={true} src="/images/clock.png" alt="BeeCat Creative | Clock" />
           </div>
-          <div className="home-form">
-            <ContactForm />
+          <div className="home-right">
+            <div className="home-header">
+              <h1 className="bold-header">The hype is real</h1>
+              <h2 className="bold-header-2">Website coming soon</h2>
+              <div className="divider"></div>
+              <h1 className="light-header">We&apos;re not &apos;here&apos; but we&apos;re still &apos;here&apos;.</h1>
+              <h1 className="light-header">Drop us a line.</h1>
+            </div>
+            <div className="home-form">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </main>
