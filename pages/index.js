@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="home__inner">
           <div className="home-clock">
-            <Image width={600} height={630} layout="responsive" priority={true} src="/images/clock.png" alt="BeeCat Creative | Clock" />
+            <Image width={600} height={550} layout="responsive" priority={true} src="/images/clock.png" alt="BeeCat Creative | Clock" />
           </div>
           <div className="home-right">
             <div className="home-header">
