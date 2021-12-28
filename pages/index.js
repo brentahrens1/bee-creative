@@ -12,28 +12,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="home">
-        <div className="home__logo">
-          <Image width={600} height={280} layout="responsive" priority={true} src='/images/beecat-logo.png' alt="BeeCat Creative | Logo" />
-        </div>
-        <div className="home__inner">
-          <div className="home-clock">
-            <Image width={600} height={550} layout="responsive" priority={true} src="/images/clock.png" alt="BeeCat Creative | Clock" />
-          </div>
-          <div className="home-right">
-            <div className="home-header">
-              <h1 className="bold-header">The hype is real</h1>
-              <h2 className="bold-header-2">Website coming soon</h2>
-              <div className="divider"></div>
-              <h1 className="light-header">We&apos;re not &apos;here&apos; but we&apos;re still &apos;here&apos;.</h1>
-              <h1 className="light-header">Drop us a line.</h1>
+      <div className="landing">
+        <div className='landing-top'>
+            <div className="landing-top__img">
+                <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/cat.png' alt="BeeCat Creative | Homepage" />
             </div>
-            <div className="home-form">
-              <ContactForm />
-            </div>
-          </div>
         </div>
-      </main>
+        <div className='landing-bottom'>
+            <div className="landing-bottom__img">
+                <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/bee.png' alt="BeeCat Creative | Homepage" />
+            </div>
+            <div className='landing-bottom__text'>
+                <h1>Creatively speaking...</h1>
+                <h1>we don’t just scratch the surface</h1>
+                <h1>we like to create the buzz!</h1>
+            </div>
+        </div>
+      </div>
     </div>
   )
 }
