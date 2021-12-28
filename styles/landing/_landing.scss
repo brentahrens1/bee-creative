@@ -5,6 +5,18 @@
         background-color: $lightGray;
         min-height: 700px;
         position: relative;
+        @include tablet {
+            min-height: 550px;
+        }
+        @include tablet-down {
+            min-height: 500px;
+        }
+        @include mobile-down {
+            min-height: 400px;
+        }
+        @include mobile {
+            min-height: 300px;
+        }
 
         &__img {
             width: 50%;
@@ -13,6 +25,9 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            @include phone {
+                width: 67%;
+            }
     
             img {
                 width: 100%;
@@ -27,6 +42,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include tablet {
+            min-height: 500px;
+        }
+        @include tablet-down {
+            min-height: 300px;
+        }
 
         &__img {
             width: 10rem;
@@ -34,6 +55,9 @@
             top: -7%;
             left: 50%;
             transform: translateX(-50%);
+            @include tablet-down {
+                top: -14%;
+            }
     
             img {
                 width: 100%;
@@ -43,12 +67,23 @@
         &__text {
             text-align: center;
             text-transform: uppercase;
+            @include mobile {
+                padding: 0 1rem;
+            }
             
             h1 {
                 font-size: $headerLarge;
-                line-height: 86.4px;
+                line-height: $headerLargeLH;
                 font-family: 'Bebas Neue', cursive;
                 color: $black;
+                @include tablet {
+                    font-size: $headerTablet;
+                    line-height: $headerTabletLH;
+                }
+                @include tablet-down {
+                    font-size: $headerMobile;
+                    line-height: $headerMobileLH;
+                }
             }
         }
     }

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ContactForm from '../components/ContactForm'
 
 export default function Home() {
 
@@ -15,12 +14,12 @@ export default function Home() {
       <div className="landing">
         <div className='landing-top'>
             <div className="landing-top__img">
-                <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/cat.png' alt="BeeCat Creative | Homepage" />
+                <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/cat.png' alt="BeeCat Creative | Homepage Cat" />
             </div>
         </div>
         <div className='landing-bottom'>
             <div className="landing-bottom__img">
-                <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/bee.png' alt="BeeCat Creative | Homepage" />
+                <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/bee.png' alt="BeeCat Creative | Homepage Bee" />
             </div>
             <div className='landing-bottom__text'>
                 <h1>Creatively speaking...</h1>
