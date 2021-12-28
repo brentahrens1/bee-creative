@@ -1,0 +1,36 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+
+    &__logo {
+        width: 10rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        width: 25rem;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                text-transform: uppercase;
+                font-size: 32px;
+                line-height: 38.4px;
+                font-family: 'Bebas Neue', cursive;
+                color: $black;
+            }
+        }
+    }
+}
