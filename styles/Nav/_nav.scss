@@ -9,6 +9,10 @@
     align-items: center;
     padding: 1rem 3rem;
 
+    &.scrolled {
+        background-color: $lightGray;
+    }
+
     &__logo {
         width: 10rem;
 

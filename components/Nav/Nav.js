@@ -1,11 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const Nav = () => {
     const [ isOpen, setIsOpen ] = useState(false)
+    const [ isScrolled, setIsScrolled ] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                setIsScrolled(true)
+            } else if (window.scrollY < 10) {
+                setIsScrolled(false)
+            }
+        })
+    }, [])
 
     return (
-        <nav className="nav">
+        <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
             <div className="nav__logo">
                 <Image width={600} height={280} layout="responsive" priority={true} src='/images/beecat-creative-logo.png' alt="BeeCat Creative | Logo" />
             </div>

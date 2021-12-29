@@ -1,0 +1,60 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $black;
+    padding: 3rem 6rem;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+
+    .footer-header {
+        margin-bottom: 4rem;
+
+        h1 {
+            color: $white;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            font-size: $headerHuge;
+            line-height: $headerHugeLH;
+            @include tablet {
+                font-size: $headerLarge;
+                line-height: $headerLargeLH;
+            }
+            @include phone {
+                font-size: $headerMedium;
+                line-height: $headerMediumLH;
+            }
+        }
+    }
+
+    .footer-contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet-down {
+            flex-direction: column;
+        }
+
+        h2 {
+            color: $white;
+            font-family: 'Bebas Neue', cursive;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: $headerSmall;
+            line-height: $headerSmallLH;
+        }
+
+        p {
+            color: $white;
+            font-family: 'Bebas Neue', cursive;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: $paragraphSmall;
+            line-height: $paragraphSmallLH;
+            @include tablet-down {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
