@@ -11,6 +11,10 @@
             font-size: $paragraph;
             line-height: $paragraphLH;
             font-family: 'Bebas Neue', cursive;
+            @include tablet-down {
+                font-size: $paragraphSmall;
+                line-height: $paragraphSmallLH;
+            }
         }
 
         h1 {
@@ -18,6 +22,10 @@
             line-height: $headerLargeLH;
             text-transform: uppercase; 
             font-family: 'Bebas Neue', cursive;
+            @include tablet-down {
+                font-size: $paragraph;
+                line-height: $paragraphLH;
+            }
         }
     }
 
@@ -30,6 +38,7 @@
             margin-bottom: 10rem;
             @include tablet-down {
                 flex-direction: column;
+                margin-bottom: 5rem;
             }
             
             .carousel-card {
@@ -42,8 +51,12 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                padding: 2.5rem;
                 z-index: 1;
+                transition: all 1s ease-in-out;
+                animation: fade 1s ease-in-out;
                 @include tablet-down {
+                    height: 250px;
                     width: 100%;
                     margin-bottom: 5rem;
                 }
@@ -51,14 +64,16 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    bottom: -2rem;
-                    left: -2rem;
+                    bottom: -1.5rem;
+                    left: .5rem;
                     background-color: $white;
                     height: 350px;
                     width: 550px;
                     border: 4px solid $black;
                     z-index: -1;
+                    transition: all 1s ease-in-out;
                     @include tablet-down {
+                        height: 250px;
                         width: 100%;
                     }
                 }
@@ -68,13 +83,22 @@
                     font-family: 'Bebas Neue', cursive;
                     font-size: $headerMedium;
                     line-height: $headerMediumLH;
+                    transition: all 1s ease-in-out;
+                    @include tablet-down {
+                        font-size: $paragraph;
+                        line-height: $paragraphLH;
+                    }
                 }
             }
     
             .carousel-img {
+                display: block;
                 width: 40%;
-    
+                transition: all 1s ease-in-out;
+                animation: fade 1s ease-in-out;
+                
                 img {
+                    transition: all 1s ease-in-out;
                     width: 100%;
                 }
 
@@ -101,5 +125,23 @@
                 }
             }
         }
+    }
+}
+
+@keyframes move-out-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

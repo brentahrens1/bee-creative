@@ -9,6 +9,7 @@ footer {
 
     .footer-header {
         margin-bottom: 4rem;
+        position: relative;
 
         h1 {
             color: $white;
@@ -17,6 +18,7 @@ footer {
             text-align: center;
             font-size: $headerHuge;
             line-height: $headerHugeLH;
+
             @include tablet {
                 font-size: $headerLarge;
                 line-height: $headerLargeLH;
@@ -24,6 +26,25 @@ footer {
             @include phone {
                 font-size: $headerMedium;
                 line-height: $headerMediumLH;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 14rem;
+            @include tablet {
+                width: 10rem;
+                bottom: -3rem;
+            }
+            @include phone {
+                display: none;
+            }
+
+            img {
+                width: 100%;
             }
         }
     }

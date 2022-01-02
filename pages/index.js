@@ -29,6 +29,25 @@ export default function Home() {
           </div>
         </section>
         <Questions />
+        <section className='landing__produce-results'>
+          <div className='results-heading'>
+            <p>OUR CAPABILITIES</p>
+            <h1>Let us produce sweet</h1>
+            <h1>results for you</h1>
+          </div>
+          <div className='results-images'>
+            <div className='green-box'>
+              <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/green-box.png' alt="BeeCat Creative | Homepage Bee" />
+            </div>
+            <div className='macaroons'>
+              <Image width={200} height={280} layout="responsive" priority={true} src='/images/landing/macaroons.png' alt="BeeCat Creative | Homepage Bee" />
+            </div>
+          </div>
+          <div className='results-cta'>
+            <p>Strategy / Creative / Performance</p>
+            <button>learn more</button>
+          </div>
+        </section>
       </div>
     </div>
   )
