@@ -8,6 +8,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
+    @include mobile-down {
+        padding: 1rem 1rem;
+    }
 
     &.scrolled {
         background-color: $lightGray;
