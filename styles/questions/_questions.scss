@@ -8,24 +8,11 @@
         margin-bottom: 5rem;
 
         p {
-            font-size: $paragraph;
-            line-height: $paragraphLH;
-            font-family: 'Bebas Neue', cursive;
-            @include tablet-down {
-                font-size: $paragraphSmall;
-                line-height: $paragraphSmallLH;
-            }
+            @include paragraph;
         }
 
         h1 {
-            font-size: $headerLarge;
-            line-height: $headerLargeLH;
-            text-transform: uppercase; 
-            font-family: 'Bebas Neue', cursive;
-            @include tablet-down {
-                font-size: $paragraph;
-                line-height: $paragraphLH;
-            }
+            @include heading;
         }
     }
 
@@ -55,10 +42,13 @@
                 z-index: 1;
                 transition: all 1s ease-in-out;
                 animation: fade 1s ease-in-out;
-                @include tablet-down {
-                    height: 250px;
+                @include tablet {
+                    height: 350px;
                     width: 100%;
                     margin-bottom: 5rem;
+                }
+                @include mobile-down {
+                    height: 250px;
                 }
     
                 &::after {
@@ -72,22 +62,18 @@
                     border: 4px solid $black;
                     z-index: -1;
                     transition: all 1s ease-in-out;
-                    @include tablet-down {
+                    @include tablet {
+                        height: 350px;
+                        width: 100%;
+                    }
+                    @include mobile-down {
                         height: 250px;
                         width: 100%;
                     }
                 }
     
                 h2 {
-                    text-transform: uppercase;
-                    font-family: 'Bebas Neue', cursive;
-                    font-size: $headerMedium;
-                    line-height: $headerMediumLH;
-                    transition: all 1s ease-in-out;
-                    @include tablet-down {
-                        font-size: $paragraph;
-                        line-height: $paragraphLH;
-                    }
+                    @include heading;
                 }
             }
     
@@ -102,7 +88,7 @@
                     width: 100%;
                 }
 
-                @include tablet-down {
+                @include tablet {
                     width: 70%;
                     min-width: 250px;
                 }

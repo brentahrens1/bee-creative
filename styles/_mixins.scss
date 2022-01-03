@@ -1,0 +1,51 @@
+@mixin heading {
+    font-size: $headerLarge;
+    line-height: $headerLargeLH;
+    font-family: 'Bebas Neue', cursive;
+    color: $black;
+    @include desktop {
+        font-size: $headerTablet;
+        line-height: $headerTabletLH;
+    }
+    @include mobile-down {
+        font-size: $headerMobile;
+        line-height: $headerMobileLH;
+    }
+}
+
+@mixin heading2 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: $headerMedium;
+    line-height: $headerMediumLH;
+    transition: all 1s ease-in-out;
+    @include tablet-down {
+        font-size: $paragraph;
+        line-height: $paragraphLH;
+    }
+}
+
+@mixin paragraph {
+    font-size: $paragraph;
+    line-height: $paragraphLH;
+    font-family: 'Bebas Neue', cursive;
+    @include tablet-down {
+        font-size: $paragraphSmall;
+        line-height: $paragraphSmallLH;
+    }
+}
+
+@mixin cta {
+    background-color: transparent;
+    border: 4px solid $black;
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    padding: 1rem 2rem;
+    font-size: $paragraph;
+    margin: 0 auto;
+    margin-top: 3rem;
+    cursor: pointer;
+    @include tablet {
+        font-size: $paragraphSmall;
+    }
+}
