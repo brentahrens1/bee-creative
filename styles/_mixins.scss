@@ -14,14 +14,19 @@
 }
 
 @mixin heading2 {
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Frank Ruhl Libre', serif;
+    text-transform: capitalize;
+    font-weight: 400;
     font-size: $headerMedium;
     line-height: $headerMediumLH;
     transition: all 1s ease-in-out;
-    @include tablet-down {
-        font-size: $paragraph;
-        line-height: $paragraphLH;
+    @include desktop {
+        font-size: $headerTablet;
+        line-height: $headerTabletLH;
+    }
+    @include mobile-down {
+        font-size: $headerMobile;
+        line-height: $headerMobileLH;
     }
 }
 
@@ -47,5 +52,12 @@
     cursor: pointer;
     @include tablet {
         font-size: $paragraphSmall;
+    }
+}
+
+@mixin page-padding {
+    padding: 6rem 6rem;
+    @include tablet {
+        padding: 3rem 3rem;
     }
 }

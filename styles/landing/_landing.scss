@@ -78,10 +78,7 @@
     }
 
     &__produce-results {
-        padding: 6rem 6rem;
-        @include tablet-down {
-            padding: 3rem 3rem;
-        }
+        @include page-padding;
 
         .results-heading {  
             @include tablet-down {
@@ -136,17 +133,8 @@
             }
 
             p {
-                font-size: $headerMedium;
-                line-height: $headerMediumLH;
+                @include heading2;
                 text-align: center;
-                @include tablet {
-                    font-size: $paragraph;
-                    line-height: $paragraphLH;
-                }
-                @include phone {
-                    font-size: $paragraphSmall;
-                    line-height: $paragraphSmallLH;
-                }
             }
 
             button {

@@ -1,9 +1,7 @@
 .questions {
     background-color: $lightGray;
-    padding: 5rem 6rem;
-    @include tablet-down {
-        padding: 5rem 3rem;
-    }
+    @include page-padding;
+    
     &__header {
         margin-bottom: 5rem;
 
