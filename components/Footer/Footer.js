@@ -14,10 +14,10 @@ const Footer = () => {
                     <h2>Follow Us</h2>
                     <div className='footer-contacts-socials'>
                         <div className='icon'>
-                            <img src="/images/footer/instagram.png" alt="Instagram" />
+                            <Image width={180} height={180} layout="responsive" priority={true} src="/images/footer/instagram.png" alt="Instagram" />
                         </div>
                         <div className='icon'>
-                            <img src="/images/footer/facebook.png" alt="Facebook" />
+                            <Image width={180} height={180} layout="responsive" priority={true} src="/images/footer/facebook.png" alt="Facebook" />
                         </div>
                     </div>
                 </div>
