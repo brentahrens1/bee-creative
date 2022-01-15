@@ -1,36 +1,39 @@
-// Padding
-
-$pagePadding: 2rem;
+// padding
+$pSmall: 2rem;
+$pMedium: 3rem;
+$pLarge: 6rem;
 
 // colors
 $lightGray: #F1F2F3;
 $black: #000000;
 $white: #ffffff;
+$lightBlue: #8995A9;
+$darkBlue: #535F73;
+$yellow: #E5E0B2;
+$lightYellow: #FBFAF1;
+$armyGreen: #7A7651;
+$lightGreen: #D6DCBC;
 
 // font size
-$headerHuge: 146px;
-
-$headerLarge: 72px;
-$headerTablet: 50px;
-$headerMobile: 35px;
-
-$headerMedium: 56px;
-
-$headerSmall: 40px;
-
-$paragraph: 32px;
-$paragraphSmall: 24px;
+$extraTiny: 12px;
+$tiny: 20px;
+$small: 24px;
+$small-medium: 28px;
+$medium: 32px;
+$large: 48px;
+$larger: 56px;
+$xLarge: 64px;
+$xxLarge: 112px;
+$huge: 116px;
 
 // line height
-$headerHugeLH: 211.2px;
-
-$headerLargeLH: 86.4px;
-$headerTabletLH: 56.4px;
-$headerMobileLH: 41.4px;
-
-$headerMediumLH: 67.2px;
-
-$headerSmallLH: 48px;
-
-$paragraphLH: 38.8px;
-$paragraphSmallLH: 28.8px;
+$lh-extra-tiny: 14.4px;
+$lh-tiny: 24px;
+$lh-small: 28.8px;
+$lh-small-medium: 33.6px;
+$lh-medium: 38.4px;
+$lh-large: 57.6px;
+$lh-larger: 64.46px;
+$lh-xlarge: 76.8px;
+$lh-xxlarge: 134.4px;
+$lh-huge: 139.2px;

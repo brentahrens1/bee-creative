@@ -12,15 +12,25 @@ const Footer = () => {
             <div className='footer-contacts'>
                 <div>
                     <h2>Follow Us</h2>
-                    <p>Socials</p>
+                    <div className='footer-contacts-socials'>
+                        <div className='icon'>
+                            <img src="/images/footer/instagram.png" alt="Instagram" />
+                        </div>
+                        <div className='icon'>
+                            <img src="/images/footer/facebook.png" alt="Facebook" />
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2>Contact</h2>
-                    <p>Meghan@beecatcreative.com</p>
-                </div>
-                <div>
-                    <h2>Back to Top</h2>
-                    <p>Frederick, MD</p>
+                <div className='footer-site-map'>
+                    <h2>Site Map</h2>
+                    <p>About us</p>
+                    <p>What We Do</p>
+                    <p>Contact</p>
+                    <div style={{marginTop: '2.5rem'}}>
+                        <h2>Contact</h2>
+                        <p>Meghan@beecatcreative.com</p>
+                        <p style={{marginTop: '1.5rem'}}>Frederick, MD</p>
+                    </div>
                 </div>
             </div>
         </footer>

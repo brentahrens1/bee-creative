@@ -1,63 +1,127 @@
-@mixin heading {
-    font-size: $headerLarge;
-    line-height: $headerLargeLH;
-    font-family: 'Bebas Neue', cursive;
-    color: $black;
-    @include desktop {
-        font-size: $headerTablet;
-        line-height: $headerTabletLH;
+@mixin blockPadding {
+    padding: $pLarge;
+
+    @include tablet {
+        padding: $pMedium;
     }
-    @include mobile-down {
-        font-size: $headerMobile;
-        line-height: $headerMobileLH;
+    @include mobile {
+        padding: $pSmall;
     }
 }
 
-@mixin heading2 {
-    font-family: 'Frank Ruhl Libre', serif;
-    text-transform: capitalize;
-    font-weight: 400;
-    font-size: $headerMedium;
-    line-height: $headerMediumLH;
-    transition: all 1s ease-in-out;
-    @include desktop {
-        font-size: $headerTablet;
-        line-height: $headerTabletLH;
-    }
-    @include mobile-down {
-        font-size: $headerMobile;
-        line-height: $headerMobileLH;
+@mixin subhead {
+    font-size: $small;
+    line-break: $lh-small;
+    color: $armyGreen;
+    font-family: "rust-base";
+    @include mobile {
+        font-size: $small;
+        line-height: $lh-small;
     }
 }
 
-@mixin paragraph {
-    font-size: $paragraph;
-    line-height: $paragraphLH;
-    font-family: 'Bebas Neue', cursive;
-    @include tablet-down {
-        font-size: $paragraphSmall;
-        line-height: $paragraphSmallLH;
+@mixin headingSmall {
+    font-size: $medium;
+    line-height: $lh-medium;
+    color: $darkBlue;
+    font-family: "rust-base";
+    @include tablet {
+        font-size: $small-medium;
+        line-height: $lh-small-medium;
+    }
+    @include mobile {
+        font-size: $small-medium;
+        line-height: $lh-small-medium;
+    }
+    @include phone {
+        font-size: $small;
+        line-height: $lh-small;
+    }
+}
+
+@mixin headingMedium {
+    font-size: $large;
+    line-height: $lh-large;
+    color: $darkBlue;
+    font-family: "rust-base";
+    @include tablet {
+        font-size: $medium;
+        line-height: $lh-medium;
+    }
+    @include mobile {
+        font-size: $small-medium;
+        line-height: $lh-small-medium;
+    }
+    @include phone {
+        font-size: $small;
+        line-height: $lh-small;
+    }
+}
+
+@mixin headingLarge {
+    font-size: $xLarge;
+    line-height: $lh-xlarge;
+    color: $darkBlue;
+    font-family: "rust-base";
+    @include tablet {
+        font-size: $large;
+        line-height: $lh-large;
+    }
+    @include mobile {
+        font-size: $medium;
+        line-height: $lh-medium;
+    }
+    @include phone {
+        font-size: $small;
+        line-height: $lh-small;
+    }
+}
+
+@mixin headingExtraLarge {
+    font-size: $xxLarge;
+    line-height: $lh-xxlarge;
+    color: $darkBlue;
+    font-family: "rust-base";
+    @include tablet {
+        font-size: $xLarge;
+        line-height: $lh-xlarge;
+    }
+    @include mobile {
+        font-size: $large;
+        line-height: $lh-large;
+    }
+    @include phone {
+    
+    }
+}
+
+@mixin bodyText {
+    font-size: $small-medium;
+    line-height: $lh-small-medium;
+    color: $darkBlue;
+    font-family: "labrador-light";
+    @include tablet {
+        font-size: $small;
+        line-height: $lh-small;
+    }
+    @include mobile {
+        font-size: $tiny;
+        line-height: $lh-tiny;
     }
 }
 
 @mixin cta {
+    font-size: $small-medium;
+    line-height: $lh-small-medium;
     background-color: transparent;
     border: 4px solid $black;
+    text-transform: uppercase;
+    color: $armyGreen;
     display: block;
-    font-family: 'Bebas Neue', cursive;
     padding: 1rem 2rem;
-    font-size: $paragraph;
     margin: 0 auto;
     margin-top: 3rem;
     cursor: pointer;
     @include tablet {
-        font-size: $paragraphSmall;
-    }
-}
-
-@mixin page-padding {
-    padding: 6rem 6rem;
-    @include tablet {
-        padding: 3rem 3rem;
     }
 }

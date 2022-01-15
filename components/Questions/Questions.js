@@ -6,20 +6,20 @@ const Questions = () => {
 
     const questionArr = [
         {
-            question: 'Having a creative block?',
-            img: '/images/questions/paper-ball.png',
+            question: 'Are you suffering from a migraine-inducing creative block?',
+            img: '/images/questions/brain.png',
             alt: 'BeeCat Creative | Question 1'
 
         },
         {
-            question: 'Don’t know who or what an algorithm is?',
-            img: '/images/questions/shrug.png',
+            question: 'Do you need to create content but there are never enough hours in the day?',
+            img: '/images/questions/clock.png',
             alt: 'BeeCat Creative | Question 2'
 
         },
         {
-            question: 'need a second set of eyes on your TIK TOK choreography?',
-            img: '/images/questions/granny.png',
+            question: 'Are you in desperate need of consistent brand guidlines to reach your full potential?',
+            img: '/images/questions/headphones.png',
             alt: 'BeeCat Creative | Question 3'
 
         },
@@ -43,7 +43,7 @@ const Questions = () => {
         <section className='questions'>
             <div className='questions__header'>
                 <p>Questions?</p>
-                <h1>We have the answers!</h1>
+                <h1>We have the answers.</h1>
             </div>
             <div className="questions__carousel">
                 <div className='carousel-inner'>
@@ -53,15 +53,22 @@ const Questions = () => {
                             <h2>{questionArr[count].question}</h2>
                         </div>
                         <div className='carousel-img'>
-                            <Image width={400} height={280} layout="responsive" priority={true} src={questionArr[count].img} alt={questionArr[count].alt} />
+                            <Image width={300} height={280} layout="responsive" priority={true} src={questionArr[count].img} alt={questionArr[count].alt} />
                         </div>
                         </>
                     }
                 </div>
                 <div className='carousel-controls'>
-                    <div className='control' onClick={back}>
-                        <Image width={400} height={170} layout="responsive" priority={true} src='/images/questions/arrow-left.png' alt="BeeCat Creative | Arrow Left" />
-                    </div>
+                    {
+                        count === 0 ? 
+                            <div className='control' onClick={back}>
+                                <Image width={300} height={170} layout="responsive" priority={true} src='/images/questions/no-back-arrow.png' alt="BeeCat Creative | Arrow Left" />
+                            </div>
+                            :
+                            <div className='control' onClick={back}>
+                                <Image width={400} height={170} layout="responsive" priority={true} src='/images/questions/arrow-left.png' alt="BeeCat Creative | Arrow Left" />
+                            </div>
+                    }
                     <div className='control' onClick={forward}>
                         <Image width={400} height={170} layout="responsive" priority={true} src='/images/questions/arrow-right.png' alt="BeeCat Creative | Arrow Right" />
                     </div>

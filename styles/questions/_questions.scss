@@ -1,16 +1,17 @@
 .questions {
-    background-color: $lightGray;
-    @include page-padding;
+    background-color: $lightYellow;
+    @include blockPadding;
     
     &__header {
         margin-bottom: 5rem;
 
         p {
-            @include paragraph;
+            @include subhead;
+            font-family: "rust-base";
         }
 
         h1 {
-            @include heading;
+            @include headingMedium;
         }
     }
 
@@ -21,7 +22,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10rem;
-            @include tablet-down {
+            @include tablet {
                 flex-direction: column;
                 margin-bottom: 5rem;
             }
@@ -45,7 +46,7 @@
                     width: 100%;
                     margin-bottom: 5rem;
                 }
-                @include mobile-down {
+                @include mobile {
                     height: 250px;
                 }
     
@@ -64,14 +65,14 @@
                         height: 350px;
                         width: 100%;
                     }
-                    @include mobile-down {
+                    @include mobile {
                         height: 250px;
                         width: 100%;
                     }
                 }
     
                 h2 {
-                    @include heading;
+                    @include headingSmall;
                 }
             }
     
@@ -103,6 +104,12 @@
             .control {
                 width: 5rem;
                 cursor: pointer;
+                @include tablet {
+                    width: 4rem;
+                }
+                @include mobile {
+                    width: 3rem;
+                }
 
                 img {
                     width: 100%;

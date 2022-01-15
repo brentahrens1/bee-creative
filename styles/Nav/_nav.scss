@@ -8,12 +8,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    @include mobile-down {
+    @include mobile {
         padding: 1rem 1rem;
     }
 
     &.scrolled {
-        background-color: $lightGray;
+        background-color: $lightYellow;
     }
 
     &__logo {
@@ -37,10 +37,10 @@
 
             li {
                 text-transform: uppercase;
-                font-size: 32px;
+                font-size: $tiny;
                 line-height: 38.4px;
-                font-family: 'Bebas Neue', cursive;
-                color: $black;
+                color: $darkBlue;
+                cursor: pointer;
             }
         }
     }
@@ -61,7 +61,7 @@
             position: absolute;
             width: 35px;
             height: 3px;
-            background-color: $black;
+            background-color: $darkBlue;
             transition: all 300ms ease-in-out;
 
             &:nth-child(1) {
@@ -82,7 +82,7 @@
             transition: all 300ms ease-in-out;
             
             .bar {
-                background-color: $white;
+                background-color: $darkBlue;
                 &:nth-child(1) {
                     top: 10px;
                     transform: rotate(45deg);
@@ -107,7 +107,7 @@
         right: -100%;
         height: 100vh;
         width: 100%;
-        background-color: $black;
+        background-color: $lightYellow;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -124,9 +124,9 @@
             justify-content: center;
 
             li {
-                color: $white;
+                color: $darkBlue;
+                font-size: $medium;
                 text-align: center;
-                font-size: $headerMobile;
                 margin-bottom: 1.3rem;
             }
         }
