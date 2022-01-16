@@ -28,7 +28,38 @@ export default function AboutUs() {
                 </div>
             </section>
             <section className="about-us__breakdown">
-
+                <div className='about-breakdown-heading'>
+                    <h2>Special Ingredients</h2>
+                    <h1>The Beecat</h1>
+                    <h1>creative sauce</h1>
+                </div>
+                <div className='about-breakdown-col'>
+                    <div className='about-col-image'>
+                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-1.png' alt="BeeCat Creative | About Us" />
+                    </div>
+                    <div className='about-col-content'>
+                        <h2>Let’s Build Together</h2>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all.</p>
+                    </div>
+                </div>
+                <div className='about-breakdown-col'>
+                    <div className='about-col-content'>
+                        <h2>Let’s Build Together</h2>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all.</p>
+                    </div>
+                    <div className='about-col-image'>
+                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-2.png' alt="BeeCat Creative | About Us" />
+                    </div>
+                </div>
+                <div className='about-breakdown-col'>
+                    <div className='about-col-image'>
+                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-3.png' alt="BeeCat Creative | About Us" />
+                    </div>
+                    <div className='about-col-content'>
+                        <h2>Let’s Build Together</h2>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all.</p>
+                    </div>
+                </div>
             </section>
         </main>
     )

@@ -87,6 +87,68 @@
     }
 
     &__breakdown {
+        display: flex;
+        flex-direction: column;
+        @include blockPadding;
+        background-color: $lightYellow;
 
+        .about-breakdown-heading {
+            margin-bottom: 4rem;
+            
+            h2 {
+                @include subhead;
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                @include headingMedium;
+            }
+        }
+
+        .about-breakdown-col {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid $divider;
+            padding-top: 2rem;
+            &:last-child {
+                border-bottom: none;
+            }
+            @include mobile {
+                padding-bottom: 2rem;
+            }
+            @include phone {
+                flex-direction: column;
+            }
+
+            .about-col-image {
+                width: 35%;
+                @include phone {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .about-col-content {
+                width: 50%;
+                @include phone {
+                    width: 100%;
+                }
+
+                h2 {
+                    @include headingSmall;
+                    @include mobile {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                p {
+                    @include bodyText;
+                }
+            }
+        }
     }
 }
