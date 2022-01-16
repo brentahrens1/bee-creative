@@ -1,0 +1,98 @@
+.contact {
+
+    &__heading {
+        @include blockPadding;
+        background-color: $lightYellow;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include tablet {
+            min-height: 100%;
+            padding-top: 6rem;
+            padding-bottom: 7rem;
+        }
+        @include mobile {
+            flex-direction: column;
+            padding-top: 8.5rem;
+            padding-bottom: 3rem;
+        }
+
+        .contact-heading-image {
+            width: 45%;
+            transform: translateY(180px);
+            @include tablet {
+                transform: translateY(50px);
+            }
+            @include mobile {
+                width: 90%;
+                transform: translateY(0);
+                margin-bottom: 2.5rem;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            @include headingExtraLarge;
+            white-space: nowrap;
+        }
+    }
+
+    &__form {
+        @include blockPadding;
+        padding-top: 15rem;
+        max-width: 1400px;
+        margin: 0 auto;
+
+        h1 {
+            @include headingLarge;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                @include subhead;
+                color: $darkBlue;
+                margin-bottom: .5rem;
+            }
+
+            input, textarea {
+                border: 2px solid $darkBlue;
+                padding: .7rem;
+                font-size: $tiny;
+                outline: transparent;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                color: $darkBlue;
+            }
+
+            .name-fields {
+                display: flex;
+                justify-content: space-between;
+                input {
+                    width: 50%;
+                    &:nth-child(1) {
+                        margin-right: .5rem;
+                    }
+                    &:nth-child(2) {
+                        margin-left: .5rem;
+                    }
+                }
+            }
+
+            input[type=submit] {
+                @include cta;
+                font-weight: 700;
+                max-width: 13rem;
+                align-self: flex-start;
+            }
+        }
+    }
+}
