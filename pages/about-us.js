@@ -39,13 +39,13 @@ export default function AboutUs() {
                     </div>
                     <div className='about-col-content'>
                         <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all.</p>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
                     </div>
                 </div>
                 <div className='about-breakdown-col'>
                     <div className='about-col-content'>
                         <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all.</p>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
                     </div>
                     <div className='about-col-image'>
                         <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-2.png' alt="BeeCat Creative | About Us" />
@@ -57,7 +57,7 @@ export default function AboutUs() {
                     </div>
                     <div className='about-col-content'>
                         <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all.</p>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
                     </div>
                 </div>
             </section>
