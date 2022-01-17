@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Nav = () => {
     const [ isOpen, setIsOpen ] = useState(false)
@@ -18,13 +19,15 @@ const Nav = () => {
     return (
         <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
             <div className="nav__logo">
-                <Image width={600} height={280} layout="responsive" priority={true} src='/images/beecat-creative-logo.png' alt="BeeCat Creative | Logo" />
+                <Link href="/">
+                    <a><Image width={600} height={280} layout="responsive" priority={true} src='/images/beecat-creative-logo.png' alt="BeeCat Creative | Logo" /></a>
+                </Link>
             </div>
             <div className="nav__list">
                 <ul>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <li><Link href="/about-us"><a>About Us</a></Link></li>
+                    <li><Link href="/what-we-do"><a>What We Do</a></Link></li>
+                    <li><Link href="/contact"><a>Contact</a></Link></li>
                 </ul>
             </div>
             <div onClick={() => setIsOpen(!isOpen)} className={`nav__hamburger ${isOpen ? 'close' : ''}`}>
@@ -34,9 +37,9 @@ const Nav = () => {
             </div>
             <div className={`nav__overlay ${isOpen ? 'show' : ''}`}>
                 <ul>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <li><Link href="/about-us"><a>About Us</a></Link></li>
+                    <li><Link href="/what-we-do"><a>What We Do</a></Link></li>
+                    <li><Link href="/contact"><a>Contact</a></Link></li>
                 </ul>
             </div>
         </nav>
