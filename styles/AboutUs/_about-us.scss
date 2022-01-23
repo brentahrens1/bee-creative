@@ -18,6 +18,7 @@
 
         .about-header-image {
             width: 45%;
+            max-width: 700px;
             transform: translateY(180px);
             @include tablet {
                 transform: translateY(50px);
@@ -42,6 +43,8 @@
     }
 
     &__message {
+        margin: 0 auto;
+        max-width: 1300px;
         @include blockPadding;
         padding-top: 13rem;
         padding-bottom: 13rem;
@@ -98,10 +101,12 @@
             h2 {
                 @include subhead;
                 margin-bottom: 1rem;
+                text-align: left;
             }
 
             h1 {
                 @include headingMedium;
+                text-align: left;
             }
         }
 
@@ -111,6 +116,8 @@
             align-items: center;
             border-bottom: 4px solid $divider;
             padding-top: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
             &:last-child {
                 border-bottom: none;
             }

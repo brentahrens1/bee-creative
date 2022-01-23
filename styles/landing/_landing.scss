@@ -5,26 +5,49 @@
         background-color: $lightYellow;
         min-height: 700px;
         position: relative;
+        margin-top: 3.5rem;
         @include tablet {
             min-height: 550px;
+
         }
         @include mobile {
             min-height: 400px;
         }
 
-        &__img {
-            width: 50%;
-            max-width: 800px;
+        &__text {
+            width: 80%;
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 1300px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            position: absolute;
+            top: 0;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
+
+            @include tablet {
+                margin-top: 3.5rem;
+            }
             @include phone {
                 width: 67%;
             }
     
             img {
                 width: 100%;
+                @include tablet {
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -64,6 +87,8 @@
         &__text {
             text-align: center;
             text-transform: uppercase;
+            margin: 0 auto;
+            max-width: 1300px;
             @include blockPadding;
             
             h1 {
@@ -76,6 +101,9 @@
         @include blockPadding;
 
         .results-heading {  
+            margin: 0 auto;
+            max-width: 1200px;
+
             @include tablet {
                 margin-bottom: 2rem;
             }
@@ -91,6 +119,8 @@
 
         .results-images {
             position: relative;
+            margin: 0 auto;
+            max-width: 1200px;
 
             .results-images-box {
                 position: absolute;
@@ -119,10 +149,11 @@
             }
 
             .results-images-image {
-                width: 45%;
+                width: 25%;
+                max-width: 450px;
                 margin: 0 auto;
                 @include mobile {
-                    width: 78%;
+                    width: 38%;
                 }
             }
 
@@ -137,6 +168,61 @@
                 margin-top: 2rem;
             }
 
+            button {
+                @include cta;
+            }
+        }
+    }
+
+    &__work {
+        @include blockPadding;
+        background-color: $lightYellow;
+        .work-heading {
+            margin-bottom: 2.5rem;
+            
+            p {
+                @include subhead;
+            }
+
+            h1 {
+                @include headingMedium;
+            }
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 1rem;
+            margin-bottom: 10rem;
+            @include mobile {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-bottom: 5rem;
+            }
+
+            .work-grid-cell {
+                .work-grid-cell-image {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    @include subhead;
+                    color: $lightBlue;
+                }
+                
+                h2 {
+                    @include headingSmall;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .work-cta {
             button {
                 @include cta;
             }

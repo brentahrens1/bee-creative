@@ -58,6 +58,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
         @include tablet {
             min-height: 500px;
         }
@@ -78,6 +80,8 @@
         @include blockPadding;
 
         .answers-heading {
+            margin: 0 auto;
+            max-width: 1200px;
             margin-bottom: 3rem;
 
             h2 {
@@ -92,7 +96,9 @@
         .answers-col {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
             @include phone {
                 flex-direction: column;
             }

@@ -20,6 +20,7 @@
 
         .contact-heading-image {
             width: 45%;
+            max-width: 700px;
             transform: translateY(180px);
             @include tablet {
                 transform: translateY(50px);

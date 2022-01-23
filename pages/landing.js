@@ -5,7 +5,7 @@ const Landing = () => {
         <div className="landing">
             <div className='landing-top'>
                 <div className="landing-top__img">
-                    <Image width={400} height={280} layout="responsive" priority={true} src='/images/landing/cat.png' alt="BeeCat Creative | Homepage" />
+                    <Image width={400} height={280} layout="responsive" priority={true} src='/images/header.png' alt="BeeCat Creative | Homepage" />
                 </div>
             </div>
             <div className='landing-bottom'>
