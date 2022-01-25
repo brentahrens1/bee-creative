@@ -12,7 +12,7 @@ const Questions = () => {
 
         },
         {
-            question: 'Do you need to create content but there are never enough hours in the day?',
+            question: 'Do you want a partner to help create an epic digital strategy?',
             img: '/images/questions/clock.png',
             alt: 'BeeCat Creative | Question 2'
 

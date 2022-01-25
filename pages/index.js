@@ -33,17 +33,17 @@ export default function Home() {
         <section className='landing__produce-results'>
           <div className='results-heading'>
             <p>OUR CAPABILITIES</p>
-            <h1>Let us produce sweet</h1>
-            <h1>results for you</h1>
+            <h1>Success after success,</h1>
+            <h1>we keep stacking 'em</h1>
           </div>
           <div className='results-images'>
             <div className='results-images-box'>
-              <p>Plan & Scheme, Create & Build, Execute & Analyze</p>
             </div>
             <div className='results-images-image'>
               <Image width={150} height={280} layout="responsive" priority={true} src='/images/landing/macaroons.png' alt="BeeCat Creative | Homepage Bee" />
             </div>
           </div>
+          <p className='results-message'>Strategy / Creative / Performance</p>
           <div className='results-cta'>
             <button>learn more</button>
           </div>

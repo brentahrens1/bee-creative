@@ -162,6 +162,14 @@
             }
         }
 
+        .results-message {
+            @include headingMedium;
+            text-align: center;
+            margin-top: 4rem;
+            color: #6B7A94;
+            font-family: "labrador-light";
+        }
+
         .results-cta {
             margin-top: 5rem;
             @include tablet {

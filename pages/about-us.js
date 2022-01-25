@@ -24,7 +24,7 @@ export default function AboutUs() {
                     <p>We start by building deep relationships with our clients, allowing us to design better solutions for all of their creative challenges. Let us do the hard work, so you don&apos;t have to.</p>
                 </div>
                 <div className='about-message-image'>
-                    <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/watermelon.png' alt="BeeCat Creative | About Us" />
+                    <Image width={280} height={280} layout="responsive" priority={true} src='/images/about/watermelon.png' alt="BeeCat Creative | About Us" />
                 </div>
             </section>
             <section className="about-us__breakdown">

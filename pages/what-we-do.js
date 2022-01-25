@@ -20,16 +20,16 @@ export default function WhatWeDo() {
             </section>
             <section className='what-we-do__answers'>
                 <div className="answers-heading">
-                    <h2>What We Do</h2>
-                    <h1>We have the answers.</h1>
+                    <h2>Our Services</h2>
+                    <h1>Let our experience work for you</h1>
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
                         <Image width={180} height={280} layout="responsive" priority={true} src='/images/what-we-do/one.png' alt="BeeCat Creative | What We Do" />
                     </div>
                     <div className='answers-content'>
-                        <h2>Plan & Scheme</h2>
-                        <p>Brand Identity and Strategy / Employer Brand / Research and Trend Forcasting / Digital Strategy</p>
+                        <h2>Create & Build</h2>
+                        <p>Graphic Design / Content Creation /Photography / Video / 360 Digital Campaigns / Copywriting</p>
                     </div>
                 </div>
                 <div className='answers-col'>
@@ -37,8 +37,8 @@ export default function WhatWeDo() {
                         <Image width={180} height={280} layout="responsive" priority={true} src='/images/what-we-do/two.png' alt="BeeCat Creative | What We Do" />
                     </div>
                     <div className='answers-content'>
-                        <h2>Plan & Scheme</h2>
-                        <p>Brand Identity and Strategy / Employer Brand / Research and Trend Forcasting / Digital Strategy</p>
+                        <h2>Execute & Analyze</h2>
+                        <p>Social Media and Community Management / Media Buying / Analytics and Insight Reports / Strategic Partnership / Digital Optimization / Digital Audits / Influencer Strategy and Management</p>
                     </div>
                 </div>
                 <div className='answers-col'>
@@ -49,6 +49,11 @@ export default function WhatWeDo() {
                         <h2>Plan & Scheme</h2>
                         <p>Brand Identity and Strategy / Employer Brand / Research and Trend Forcasting / Digital Strategy</p>
                     </div>
+                </div>
+            </section>
+            <section className='what-we-do__work'>
+                <div className='what-we-do-grid'>
+
                 </div>
             </section>
         </main>
