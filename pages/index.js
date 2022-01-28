@@ -34,13 +34,13 @@ export default function Home() {
           <div className='results-heading'>
             <p>OUR CAPABILITIES</p>
             <h1>Success after success,</h1>
-            <h1>we keep stacking 'em</h1>
+            <h1>we keep stacking &apos;em</h1>
           </div>
           <div className='results-images'>
             <div className='results-images-box'>
             </div>
             <div className='results-images-image'>
-              <Image width={150} height={280} layout="responsive" priority={true} src='/images/landing/macaroons.png' alt="BeeCat Creative | Homepage Bee" />
+              <Image width={160} height={280} layout="responsive" priority={true} src='/images/landing/macaroons.png' alt="BeeCat Creative | Homepage Bee" />
             </div>
           </div>
           <p className='results-message'>Strategy / Creative / Performance</p>
