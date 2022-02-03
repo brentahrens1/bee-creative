@@ -43,7 +43,7 @@ const Questions = () => {
         <section className='questions'>
             <div className='questions__header'>
                 <p>Questions?</p>
-                <h1>We have the answers.</h1>
+                <h1>We have the answers</h1>
             </div>
             <div className="questions__carousel">
                 <div className='carousel-inner'>

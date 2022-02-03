@@ -16,7 +16,7 @@ export default function WhatWeDo() {
                 </div>
             </section>
             <section className='what-we-do__message'>
-                <h1>BeeCat Creative specializes in giving business owners the gift of time.</h1>
+                <h1>BeeCat Creative specializes in giving business owners the gift of time</h1>
             </section>
             <section className='what-we-do__answers'>
                 <div className="answers-heading">

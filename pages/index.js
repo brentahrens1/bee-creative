@@ -43,7 +43,7 @@ export default function Home() {
               <Image width={160} height={280} layout="responsive" priority={true} src='/images/landing/macaroons.png' alt="BeeCat Creative | Homepage Bee" />
             </div>
           </div>
-          <p className='results-message'>Strategy / Creative / Performance</p>
+          <p className='results-message'>Plan / Create / Execute</p>
           <div className='results-cta'>
             <button>learn more</button>
           </div>
@@ -59,22 +59,22 @@ export default function Home() {
               <div className='word-grid-cell-image'>
                 <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-1.png' alt="BeeCat Creative | Homepage Bee" />
               </div>
-              <h2>Project Name</h2>
-              <p>SUB NAME</p>
+              <h2>LSWG Employer Branding</h2>
+              <p>Leverage the brand to improve employee communication and strengthen company culture.</p>
             </div>
             <div className='work-grid-cell'>
               <div className='word-grid-cell-image'>
                 <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Homepage Bee" />
               </div>
-              <h2>Project Name</h2>
-              <p>SUB NAME</p>
+              <h2>Robinwood Smiles Digital Build</h2>
+              <p>Brand Awareness through Social Media Presence</p>
             </div>
             <div className='work-grid-cell'>
               <div className='word-grid-cell-image'>
                 <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
               </div>
-              <h2>Project Name</h2>
-              <p>SUB NAME</p>
+              <h2>Lovettsville Town Commons Rebrand</h2>
+              <p>Brand Identity and Strategy to bring life to a new commercial build in Lovettsville, VA.</p>
             </div>
           </div>
           <div className='work-cta'>

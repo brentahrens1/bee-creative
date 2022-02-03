@@ -3,16 +3,8 @@
     
     .landing-top {
         background-color: $lightYellow;
-        min-height: 700px;
         position: relative;
-        margin-top: 3.5rem;
-        @include tablet {
-            min-height: 550px;
-
-        }
-        @include mobile {
-            min-height: 400px;
-        }
+        margin-top: 6rem;
 
         &__text {
             width: 80%;
@@ -29,18 +21,13 @@
 
         &__img {
             width: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
             width: 100%;
+            max-height: 650px;
 
             @include tablet {
                 margin-top: 3.5rem;
             }
             @include phone {
-                width: 67%;
             }
     
             img {
@@ -226,6 +213,7 @@
                 h2 {
                     @include headingSmall;
                     margin-top: 1rem;
+                    margin-bottom: 1rem;
                 }
             }
         }

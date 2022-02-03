@@ -22,14 +22,16 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-site-map'>
-                    <h2>Site Map</h2>
-                    <p>About us</p>
-                    <p>What We Do</p>
-                    <p>Contact</p>
-                    <div style={{marginTop: '2.5rem'}}>
+                    <div style={{marginRight: '3rem'}}>
+                        <h2>Site Map</h2>
+                        <p>About us</p>
+                        <p>What We Do</p>
+                        <p>Contact</p>
+                    </div>
+                    <div>
                         <h2>Contact</h2>
-                        <p>Meghan@beecatcreative.com</p>
-                        <p style={{marginTop: '1.5rem'}}>Frederick, MD</p>
+                        <p>hello@beecatcreative.com</p>
+                        <p>Frederick, MD</p>
                     </div>
                 </div>
             </div>

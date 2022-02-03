@@ -24,8 +24,8 @@ footer {
 
         h1 {
             color: $white;
-            font-size: $huge;
-            line-height: $lh-huge;
+            font-size: $lh-larger;
+            line-height: $lh-larger;
             text-transform: uppercase;
             text-align: center;
 
@@ -48,7 +48,7 @@ footer {
             bottom: -5rem;
             left: 50%;
             transform: translateX(-50%);
-            width: 14rem;
+            width: 11rem;
             @include tablet {
                 width: 10rem;
                 bottom: -4rem;
@@ -99,7 +99,7 @@ footer {
             margin-top: .7rem;
 
             .icon {
-                width: 2rem;
+                width: 3rem;
 
                 &:nth-child(1) {
                     margin-right: 1.5rem;
@@ -112,7 +112,7 @@ footer {
         }
 
         .footer-site-map {
-            margin-right: 5rem;
+            display: flex;
             @include tablet {
                 margin-right: 0;
                 text-align: center;
