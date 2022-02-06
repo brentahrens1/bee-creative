@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-site-map'>
-                    <div style={{marginRight: '3rem'}}>
+                    <div className='site-map--left'>
                         <h2>Site Map</h2>
                         <p>About us</p>
                         <p>What We Do</p>

@@ -142,6 +142,58 @@
     }
 
     &__work {
-        
+        @include blockPadding;
+        h1 {
+            @include headingSmall;
+            text-align: center;
+        }
+
+        .what-we-do-grid {
+            
+            .what-we-do-grid-cell {
+                max-width: 1000px;
+                margin: 0 auto;
+                margin-top: 3.5rem;
+
+                .what-we-do-grid-cell-image {
+                    max-width: 600px;
+                    margin: 0 auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h2 {
+                    @include headingMedium;
+                    text-align: center;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                h3 {
+                    @include subhead;
+                    color: $darkBlue;
+                    text-align: center;
+                }
+                p {
+                    @include bodyText;
+                    text-align: center;
+                    margin-top: 1.5rem;
+                }
+                ul {
+                    text-align: center;
+                    margin-top: 1.5rem;
+
+                    .work-list-header {
+                        @include subhead;
+                        color: $darkBlue;
+                    }
+
+                    li {
+                        @include bodyText;
+                    }
+                }
+            }
+        }
     }
 }

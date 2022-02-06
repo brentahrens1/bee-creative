@@ -28,9 +28,8 @@ export default function ContactUs() {
             </Head>
             <section className='contact__heading'>
                 <div className='contact-heading-image'>
-                    <Image width={400} height={280} layout="responsive" priority={true} src='/images/contact/phone.png' alt="BeeCat Creative | Contact Us" />
+                    <Image width={300} height={280} layout="responsive" priority={true} src='/images/clock.png' alt="BeeCat Creative | Contact Us" />
                 </div>
-                <h1>Contact Us</h1>
             </section>
             <section className='contact__form'>
                 <h1>Shoot us a Message</h1>
@@ -56,7 +55,7 @@ export default function ContactUs() {
                         type="email" 
                         name="email" 
                         />
-                        <label>Message</label>
+                        <label>Let is all out. We're here for you.</label>
                         <textarea 
                         type="text"
                         rows="8" 
@@ -64,7 +63,7 @@ export default function ContactUs() {
                         name="message"
                         >
                         </textarea>
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="godspeed" />
                 </form>
                 :
                 <div className="success">

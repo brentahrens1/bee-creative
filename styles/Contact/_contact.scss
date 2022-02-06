@@ -1,55 +1,60 @@
 .contact {
+    background-color: #A3E0DA;
+    display: flex;
+    @include blockPadding;
+    overflow-x: hidden;
+    @include tablet {
+        flex-direction: column;
+        padding-top: 6rem;
+    }
 
     &__heading {
-        @include blockPadding;
-        background-color: $lightYellow;
-        min-height: 400px;
+        background-color: #A3E0DA;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 50%;
+        margin-right: 1rem;
+        transform: translateX(-100px);
+        max-width: 650px;
         @include tablet {
-            min-height: 100%;
-            padding-top: 6rem;
-            padding-bottom: 7rem;
+            width: 50%;
+            transform: translateX(0);
+            margin: 0 auto;
+            order: 2;
+            padding-top: 5rem;
         }
-        @include mobile {
-            flex-direction: column;
-            padding-top: 8.5rem;
-            padding-bottom: 3rem;
+        @include phone {
+            width: 100%;
+            transform: translateX(0);
+            margin: 0 auto;
+            order: 2;
+            padding-top: 5rem;
         }
 
         .contact-heading-image {
-            width: 45%;
+            width: 100%;
             max-width: 700px;
-            transform: translateY(180px);
-            @include tablet {
-                transform: translateY(50px);
-            }
-            @include mobile {
-                width: 90%;
-                transform: translateY(0);
-                margin-bottom: 2.5rem;
-            }
 
             img {
                 width: 100%;
             }
         }
-
-        h1 {
-            @include headingExtraLarge;
-            white-space: nowrap;
-        }
     }
 
     &__form {
-        @include blockPadding;
-        padding-top: 15rem;
-        max-width: 1400px;
+        width: 50%;
         margin: 0 auto;
+        padding-top: 5rem;
+        margin-left: 1rem;
+        @include tablet {
+            width: 100%;
+            margin-left: 0;
+            order: 1;
+        }
 
         h1 {
-            @include headingLarge;
+            @include headingMedium;
             text-align: center;
             margin-bottom: 4rem;
         }
@@ -90,8 +95,10 @@
 
             input[type=submit] {
                 @include cta;
+                color: $darkBlue;
+                border-color: $darkBlue;
                 font-weight: 700;
-                max-width: 13rem;
+                max-width: 15rem;
                 align-self: flex-start;
             }
         }
