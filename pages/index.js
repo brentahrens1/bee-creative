@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Questions from '../components/Questions/Questions'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -45,7 +46,7 @@ export default function Home() {
           </div>
           <p className='results-message'>Plan / Create / Execute</p>
           <div className='results-cta'>
-            <button>learn more</button>
+            <button><Link href="/about-us"><a>learn more</a></Link></button>
           </div>
         </section>
         <section className='landing__work'>
@@ -78,7 +79,7 @@ export default function Home() {
             </div>
           </div>
           <div className='work-cta'>
-            <button>More Work</button>
+            <button><Link href="/what-we-do"><a>More Work</a></Link></button>
           </div>
         </section>
       </div>
