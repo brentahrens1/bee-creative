@@ -148,6 +148,11 @@
             text-align: center;
         }
 
+        .work--header {
+            @include headingLarge;
+            color: $armyGreen;
+        }
+
         .what-we-do-grid {
             
             .what-we-do-grid-cell {
@@ -186,7 +191,6 @@
 
                     .work-list-header {
                         @include subhead;
-                        color: $darkBlue;
                     }
 
                     li {

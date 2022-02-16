@@ -65,14 +65,14 @@ export default function Home() {
             </div>
             <div className='work-grid-cell'>
               <div className='word-grid-cell-image'>
-                <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Homepage Bee" />
+                <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
               </div>
               <h2>Robinwood Smiles Digital Build</h2>
-              <p>Brand Awareness through Social Media Presence</p>
+              <p>Optimize and engage to increase brand awareness through social media</p>
             </div>
             <div className='work-grid-cell'>
               <div className='word-grid-cell-image'>
-                <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
+                <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Homepage Bee" />
               </div>
               <h2>Lovettsville Town Commons Rebrand</h2>
               <p>Brand Identity and Strategy to bring life to a new commercial build in Lovettsville, VA.</p>

@@ -25,7 +25,7 @@ export default function WhatWeDo() {
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
-                        <Image width={180} height={280} layout="responsive" priority={true} src='/images/what-we-do/one.png' alt="BeeCat Creative | What We Do" />
+                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/one.png' alt="BeeCat Creative | What We Do" />
                     </div>
                     <div className='answers-content'>
                         <h2>Create & Build</h2>
@@ -34,7 +34,7 @@ export default function WhatWeDo() {
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
-                        <Image width={180} height={280} layout="responsive" priority={true} src='/images/what-we-do/two.png' alt="BeeCat Creative | What We Do" />
+                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/two.png' alt="BeeCat Creative | What We Do" />
                     </div>
                     <div className='answers-content'>
                         <h2>Execute & Analyze</h2>
@@ -43,7 +43,7 @@ export default function WhatWeDo() {
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
-                        <Image width={180} height={280} layout="responsive" priority={true} src='/images/what-we-do/three.png' alt="BeeCat Creative | What We Do" />
+                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/three.png' alt="BeeCat Creative | What We Do" />
                     </div>
                     <div className='answers-content'>
                         <h2>Plan & Scheme</h2>
@@ -52,7 +52,8 @@ export default function WhatWeDo() {
                 </div>
             </section>
             <section className='what-we-do__work'>
-                <h1>We&apos;re not shy, but we like to let our work do the talking. Check it out</h1>
+                <h1 className='work--header'>Our Work</h1>
+                <h1>We&apos;re not shy, but we like to let our work do the talking</h1>
                 <div className='what-we-do-grid'>
                     <div className='what-we-do-grid-cell'>
                         <div className='what-we-do-grid-cell-image'>
@@ -73,10 +74,10 @@ export default function WhatWeDo() {
                         </div>
                     <div className='what-we-do-grid-cell'>
                         <div className='what-we-do-grid-cell-image'>
-                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Homepage Bee" />
+                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
                         </div>
                         <h2>Robinwood Smiles Digital Build</h2>
-                        <h3>Brand Awareness through Social Media Presence</h3>
+                        <h3>Optimize and engage to increase brand awareness through social media</h3>
                         <p>When Robinwood Smiles expanded to a second location, they asked us to help build awareness for both their new and existing practices. The goal was to build a consistent social media presence that communicated their services and celebrated their fun work environment and to do it without investing significantly in paid advertising. That sounds like our kind of challenge, so we set to work creating unique content for Facebook, Instagram, and TikTok, keeping a close eye on engagement metrics to measure reach and optimize messaging. The work paid off and In a relatively short amount of time, we&apos;ve increased Robinwood Smiles Facebook page visits by 55% and increased their Instagram page visits by 626%, all without spending a dime on paid advertising. Oh, and not to humblebrag, but we aren&apos;t too shabby on TikTok either. In one year, we&apos;ve created three organic viral videos that racked up over 500 million views. WOW!</p>
                         <ul>
                             <li className='work-list-header'>What We Did:</li>
@@ -92,7 +93,7 @@ export default function WhatWeDo() {
                     </div>
                     <div className='what-we-do-grid-cell'>
                         <div className='what-we-do-grid-cell-image'>
-                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
+                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Homepage Bee" />
                         </div>
                         <h2>Lovettsville Town Commons Rebrand</h2>
                         <h3>Brand Identity and Strategy to bring life to a new commercial build in Lovettsville, VA.</h3>

@@ -206,12 +206,15 @@
                 }
 
                 p {
-                    @include subhead;
+                    font-size: $small;
+                    line-height: $lh-small;
                     color: $lightBlue;
+                    font-family: "labrador-light";
                 }
                 
                 h2 {
-                    @include headingSmall;
+                    font-size: $tiny;
+                    line-height: $lh-tiny;
                     margin-top: 1rem;
                     margin-bottom: 1rem;
                 }

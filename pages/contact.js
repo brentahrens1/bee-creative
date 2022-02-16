@@ -1,16 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com'
+import ReCAPTCHA from "react-google-recaptcha"
 
 export default function ContactUs() {
     const form = useRef();
     const [ isSuccess, setIsSuccess ] = useState(false)
+    const [ isCaptcha, setIsCaptcha ] = useState(false)
+
+    const toggleCaptcha = (e) => {
+        e.preventDefault()
+        setIsCaptcha(true)
+    }
 
     const sendEmail = (e) => {
         e.preventDefault()
     
-        emailjs.sendForm('service_gykjvxj', 'template_71nweld', form.current, 'user_h2jSyo7kIF8oKQP7E4v9t')
+        emailjs.sendForm(`${process.env.NEXT_PUBLIC_SERVICE}`, `${process.env.NEXT_PUBLIC_TEMPLATE}`, form.current, `${process.env.NEXT_PUBLIC_USER}`)
         .then((result) => {
             console.log(result.text)
             setIsSuccess(true)
@@ -28,15 +35,16 @@ export default function ContactUs() {
             </Head>
             <section className='contact__heading'>
                 <div className='contact-heading-image'>
-                    <Image width={300} height={280} layout="responsive" priority={true} src='/images/clock.png' alt="BeeCat Creative | Contact Us" />
+                    <Image width={420} height={280} layout="responsive" priority={true} src='/images/contact/phone.png' alt="BeeCat Creative | Contact Us" />
                 </div>
+                <h1>Contact Us</h1>
             </section>
             <section className='contact__form'>
                 <h1>Shoot us a Message</h1>
             <>
             {
-                !isSuccess ?
-                <form ref={form} onSubmit={sendEmail} className="contact-form">
+                !isCaptcha ?
+                <form ref={form} onSubmit={toggleCaptcha} className="contact-form">
                         <label>Name</label>
                         <div className="name-fields">
                             <input 
@@ -67,12 +75,22 @@ export default function ContactUs() {
                 </form>
                 :
                 <div className="success">
+                    <ReCAPTCHA
+                        sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
+                        onChange={sendEmail}
+                    />
                     <h1>Did you know the moon has moonquakes? Weird.</h1>
                     <h1>Your message is currently traveling through time and space. Destination: our inbox. So be on the lookout for our BeeCat signal… ahem, email</h1>
                 </div>
             }
             </>
             </section>
+            <div className='contact--socials'>
+                <p>Email: <a  href="mailto:hello@beecatcreative.com" target="_blank">hello@beecatcreative.com</a></p>
+                <p>IG: <a  href="https://instagram.com/beecatcreative" target="_blank">@beecatcreative</a></p>
+                <p>FB: <a  href="https://facebook.com/beecatcreative" target="_blank">@beecatcreative</a></p>
+                <p>BeeCat Creative HQ located in Frederick, MD</p>
+            </div>
         </main>
     )
 }
