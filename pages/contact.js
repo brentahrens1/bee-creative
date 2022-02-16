@@ -86,9 +86,9 @@ export default function ContactUs() {
             </>
             </section>
             <div className='contact--socials'>
-                <p>Email: <a  href="mailto:hello@beecatcreative.com" target="_blank">hello@beecatcreative.com</a></p>
-                <p>IG: <a  href="https://instagram.com/beecatcreative" target="_blank">@beecatcreative</a></p>
-                <p>FB: <a  href="https://facebook.com/beecatcreative" target="_blank">@beecatcreative</a></p>
+                <p>Email: <a  href="mailto:hello@beecatcreative.com" target="_blank" rel="noreferrer">hello@beecatcreative.com</a></p>
+                <p>IG: <a  href="https://instagram.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
+                <p>FB: <a  href="https://facebook.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
                 <p>BeeCat Creative HQ located in Frederick, MD</p>
             </div>
         </main>
