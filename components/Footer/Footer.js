@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='footer-header'>
                 <h1>LETS BUILD TOGETHER</h1>
                 <div className="footer-header__img">
-                    <Image width={300} height={280} layout="responsive" priority={true} src='/images/footer/builders.png' alt="BeeCat Creative | Homepage Bee" />
+                    <Image width={300} height={280} layout="responsive" priority={true} src='/images/footer/builders.png' alt="BeeCat Creative | Builders" />
                 </div>
             </div>
             <div className='footer-contacts'>
@@ -25,6 +25,7 @@ const Footer = () => {
                             </div>
                         </a>
                     </div>
+                    <p>© 2022 BeeCat Creative</p>
                 </div>
                 <div className='footer-site-map'>
                     <div className='site-map--left'>

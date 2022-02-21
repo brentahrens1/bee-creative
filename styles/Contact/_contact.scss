@@ -43,11 +43,13 @@
     &__form {
         @include blockPadding;
         width: 100%;
-        max-width: 1100px;
         margin: 0 auto;
         padding-top: 5rem;
+        display: flex;
+        
         @include tablet {
             width: 100%;
+            flex-direction: column;
         }
 
         h1 {
@@ -59,6 +61,11 @@
         .contact-form {
             display: flex;
             flex-direction: column;
+            width: 60%;
+            @include tablet {
+                width: 100%;
+                order: 1;
+            }
 
             label {
                 @include subhead;
@@ -102,16 +109,22 @@
     }
 
     .contact--socials {
-        @include blockPadding;
         padding-top: 0;
+        padding-right: 2rem;
         margin: 2rem auto;
-        text-align: center;
+        margin-top: 0;
+        text-align: left;
         color: $darkBlue;
-        font-size: $medium;
-        line-height: $lh-medium;
+        font-size: $tiny;
+        line-height: $lh-tiny;
+        width: 40%;
         @include tablet {
             font-size: $small;
             line-height: $lh-small;
+            order: 2;
+            text-align: center;
+            padding-right: 0;
+            margin-top: 5rem;
         }
 
         p {

@@ -5,7 +5,10 @@ footer {
     width: 100%;
     margin: 0;
     max-width: 100%;
+    position: relative;
     @include blockPadding;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     @include tablet {
         padding: 6rem 0;
     }
@@ -77,6 +80,9 @@ footer {
             text-transform: uppercase;
             font-size: $tiny;
             line-height: $lh-tiny;
+            @include tablet {
+                text-align: center;
+            }
         }
 
         p {
@@ -96,6 +102,10 @@ footer {
             display: flex;
             align-items: center;
             margin-top: .7rem;
+            @include tablet {
+                justify-content: center;
+            }
+
 
             .icon {
                 width: 3rem;

@@ -39,13 +39,13 @@ export default function AboutUs() {
                     </div>
                     <div className='about-col-content'>
                         <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to layout a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all. (you can replace these jokes)</p>
                     </div>
                 </div>
                 <div className='about-breakdown-col'>
                     <div className='about-col-content'>
-                        <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
+                        <h2>Creating Your Brand</h2>
+                        <p>Subcopy: After compiling research, it’s time to translate your competitive strategy into a unique look and feel that stands out in a crowded marketplace. Then we create custom content to broadcast your brand personality out into the big, wide universe. Put on your space pants and prepare for launch.</p>
                     </div>
                     <div className='about-col-image'>
                         <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-2.png' alt="BeeCat Creative | About Us" />
@@ -56,8 +56,8 @@ export default function AboutUs() {
                         <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-3.png' alt="BeeCat Creative | About Us" />
                     </div>
                     <div className='about-col-content'>
-                        <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to lay out a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
+                        <h2>Measuring Impact</h2>
+                        <p>Your marketing journey doesn’t end with content creation. At BeeCat, we constantly gather data and feedback in order to track your brand’s reach and influence. This allows us to instantaneously refine content and messaging, leading to optimized performance and ROI. The best results are the ones you can measure.</p>
                     </div>
                 </div>
             </section>

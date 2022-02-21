@@ -68,7 +68,7 @@ export default function Home() {
                 <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
               </div>
               <h2>Robinwood Smiles Digital Build</h2>
-              <p>Optimize and engage to increase brand awareness through social media</p>
+              <p>Optimize and engage to increase brand awareness through social media.</p>
             </div>
             <div className='work-grid-cell'>
               <div className='word-grid-cell-image'>

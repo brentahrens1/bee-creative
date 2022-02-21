@@ -40,39 +40,47 @@ export default function ContactUs() {
                 <h1>Contact Us</h1>
             </section>
             <section className='contact__form'>
-                <h1>Shoot us a Message</h1>
             <>
             {
                 !isCaptcha ?
+                <>
+                <div className='contact--socials'>
+                    <p>Email: <a  href="mailto:hello@beecatcreative.com" target="_blank" rel="noreferrer">hello@beecatcreative.com</a></p>
+                    <p>IG: <a  href="https://instagram.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
+                    <p>FB: <a  href="https://facebook.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
+                    <p>BeeCat Creative<br/>HQ located in Frederick, MD</p>
+                </div>
                 <form ref={form} onSubmit={toggleCaptcha} className="contact-form">
-                        <label>Name</label>
-                        <div className="name-fields">
-                            <input 
-                            type="text" 
-                            name="first-name" 
-                            placeholder="First Name"
-                            />
-                            <input 
-                            type="text" 
-                            name="last-name" 
-                            placeholder="Last Name" 
-                            />
-                        </div>
-                        <label>Email</label>
+                    <h1>Shoot us a Message</h1>
+                    <label>Name</label>
+                    <div className="name-fields">
                         <input 
-                        type="email" 
-                        name="email" 
+                        type="text" 
+                        name="first-name" 
+                        placeholder="First Name"
                         />
-                        <label>Let is all out. We&apos;re here for you.</label>
-                        <textarea 
-                        type="text"
-                        rows="8" 
-                        cols="50"
-                        name="message"
-                        >
-                        </textarea>
-                        <input type="submit" value="godspeed" />
+                        <input 
+                        type="text" 
+                        name="last-name" 
+                        placeholder="Last Name" 
+                        />
+                    </div>
+                    <label>Email</label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    />
+                    <label>Let is all out. We&apos;re here for you.</label>
+                    <textarea 
+                    type="text"
+                    rows="8" 
+                    cols="50"
+                    name="message"
+                    >
+                    </textarea>
+                    <input type="submit" value="godspeed" />
                 </form>
+                </>
                 :
                 <div className="success">
                     <ReCAPTCHA
@@ -85,12 +93,6 @@ export default function ContactUs() {
             }
             </>
             </section>
-            <div className='contact--socials'>
-                <p>Email: <a  href="mailto:hello@beecatcreative.com" target="_blank" rel="noreferrer">hello@beecatcreative.com</a></p>
-                <p>IG: <a  href="https://instagram.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
-                <p>FB: <a  href="https://facebook.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
-                <p>BeeCat Creative HQ located in Frederick, MD</p>
-            </div>
         </main>
     )
 }
