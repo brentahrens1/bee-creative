@@ -39,7 +39,7 @@ export default function AboutUs() {
                     </div>
                     <div className='about-col-content'>
                         <h2>Let’s Build Together</h2>
-                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to layout a comprehensive plan that positions your brand for success. Dollar, dollar bills y'all. (you can replace these jokes)</p>
+                        <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to layout a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all. (you can replace these jokes)</p>
                     </div>
                 </div>
                 <div className='about-breakdown-col'>
