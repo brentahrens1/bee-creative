@@ -16,12 +16,12 @@ const Footer = () => {
                     <div className='footer-contacts-socials'>
                         <a href="https://www.instagram.com/beecatcreative" target="_blank" rel="noopener noreferrer">
                             <div className='icon'>
-                                <Image width={180} height={180} layout="responsive" priority={true} src="/images/footer/instagram.png" alt="Instagram" />
+                                <Image width={180} height={170} layout="responsive" priority={true} src="/images/footer/instagram.png" alt="Instagram" />
                             </div>
                         </a>
                         <a href="https://www.facebook.com/beecatcreative" target="_blank" rel="noopener noreferrer">
                             <div className='icon'>
-                                <Image width={180} height={180} layout="responsive" priority={true} src="/images/footer/facebook.png" alt="Facebook" />
+                                <Image width={180} height={170} layout="responsive" priority={true} src="/images/footer/facebook.png" alt="Facebook" />
                             </div>
                         </a>
                     </div>

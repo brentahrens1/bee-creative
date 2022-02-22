@@ -14,8 +14,8 @@ const Questions = () => {
         {
             question: 'Do you want a partner to help create an epic digital strategy?',
             img: '/images/questions/clock.png',
-            alt: 'BeeCat Creative | Question 2'
-
+            alt: 'BeeCat Creative | Question 2',
+            class: "question-2"
         },
         {
             question: 'Are you in desperate need of consistent brand guidlines to reach your full potential?',
@@ -52,23 +52,16 @@ const Questions = () => {
                         <div key={questionArr[count].alt} className='carousel-card'>
                             <h2>{questionArr[count].question}</h2>
                         </div>
-                        <div className='carousel-img'>
+                        <div className={`carousel-img ${questionArr[count].class ? questionArr[count].class : ""}`}>
                             <Image width={300} height={280} layout="responsive" priority={true} src={questionArr[count].img} alt={questionArr[count].alt} />
                         </div>
                         </>
                     }
                 </div>
                 <div className='carousel-controls'>
-                    {
-                        count === 0 ? 
-                            <div className='control' onClick={back}>
-                                <Image width={300} height={170} layout="responsive" priority={true} src='/images/questions/no-back-arrow.png' alt="BeeCat Creative | Arrow Left" />
-                            </div>
-                            :
-                            <div className='control' onClick={back}>
-                                <Image width={400} height={170} layout="responsive" priority={true} src='/images/questions/arrow-left.png' alt="BeeCat Creative | Arrow Left" />
-                            </div>
-                    }
+                    <div className='control' onClick={back}>
+                        <Image width={400} height={170} layout="responsive" priority={true} src='/images/questions/arrow-left.png' alt="BeeCat Creative | Arrow Left" />
+                    </div>
                     <div className='control' onClick={forward}>
                         <Image width={400} height={170} layout="responsive" priority={true} src='/images/questions/arrow-right.png' alt="BeeCat Creative | Arrow Right" />
                     </div>
