@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { icons } from '../data/logos'
 
 export default function WhatWeDo() {
     return (
@@ -77,7 +78,7 @@ export default function WhatWeDo() {
                             <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
                         </div>
                         <h2>Robinwood Smiles Digital Build</h2>
-                        <h3>Optimize and engage to increase brand awareness through social media</h3>
+                        <h3>Optimize and engage to increase brand awareness through social media.</h3>
                         <p>When Robinwood Smiles expanded to a second location, they asked us to help build awareness for both their new and existing practices. The goal was to build a consistent social media presence that communicated their services and celebrated their fun work environment and to do it without investing significantly in paid advertising. That sounds like our kind of challenge, so we set to work creating unique content for Facebook, Instagram, and TikTok, keeping a close eye on engagement metrics to measure reach and optimize messaging. The work paid off and In a relatively short amount of time, we&apos;ve increased Robinwood Smiles Facebook page visits by 55% and increased their Instagram page visits by 626%, all without spending a dime on paid advertising. Oh, and not to humblebrag, but we aren&apos;t too shabby on TikTok either. In one year, we&apos;ve created three organic viral videos that racked up over 500 million views. WOW!</p>
                         <ul>
                             <li className='work-list-header'>What We Did:</li>
@@ -106,6 +107,17 @@ export default function WhatWeDo() {
                             <li>SEO and Keyword Research</li>
                         </ul>
                     </div>
+                </div>
+                <div className='icon-grid'>
+                    {
+                        icons.map((icon, id) => {
+                            return (
+                                <div key={id} className='icon-grid-image'>
+                                    <Image width={icon.w} height={icon.h} layout="responsive" priority={true} src={icon.img} alt={icon.alt} />
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </section>
         </main>

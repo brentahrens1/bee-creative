@@ -109,16 +109,25 @@
     }
 
     .contact--socials {
-        padding-top: 0;
-        padding-right: 2rem;
+        padding-top: 8rem;
+        padding-right: 3rem;
         margin: 2rem auto;
         margin-top: 0;
         text-align: left;
         color: $darkBlue;
-        font-size: $tiny;
-        line-height: $lh-tiny;
+        font-size: $small-medium;
+        line-height: $lh-small-medium;
         width: 40%;
+
+        p {
+            font-family: "rust-base";
+
+            a {
+                font-family: "labrador-light";
+            }
+        }
         @include tablet {
+            padding-top: 0rem;
             font-size: $small;
             line-height: $lh-small;
             order: 2;

@@ -199,5 +199,35 @@
                 }
             }
         }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0 auto;
+            margin-top: 7rem;
+            max-width: 1300px;
+            @include mobile {
+                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 2rem;
+            }
+    
+            .icon-grid-image {
+                width: 50%;
+                margin: 0 auto;
+
+                &:nth-child(1), &:nth-child(8) {
+                    width: 70%;
+                }
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+        }
     }
 }

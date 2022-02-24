@@ -70,7 +70,7 @@ export default function ContactUs() {
                     type="email" 
                     name="email" 
                     />
-                    <label>Let is all out. We&apos;re here for you.</label>
+                    <label>Let it all out. We&apos;re here for you.</label>
                     <textarea 
                     type="text"
                     rows="8" 
