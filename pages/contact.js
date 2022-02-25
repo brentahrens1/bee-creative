@@ -2,17 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com'
-import ReCAPTCHA from "react-google-recaptcha"
+// import ReCAPTCHA from "react-google-recaptcha"
 
 export default function ContactUs() {
     const form = useRef();
     const [ isSuccess, setIsSuccess ] = useState(false)
-    const [ isCaptcha, setIsCaptcha ] = useState(false)
+    // const [ isCaptcha, setIsCaptcha ] = useState(false)
 
-    const toggleCaptcha = (e) => {
-        e.preventDefault()
-        setIsCaptcha(true)
-    }
+    // const toggleCaptcha = (e) => {
+    //     e.preventDefault()
+    //     setIsCaptcha(true)
+    // }
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -42,7 +42,7 @@ export default function ContactUs() {
             <section className='contact__form'>
             <>
             {
-                !isCaptcha ?
+                !isSuccess ?
                 <>
                 <div className='contact--socials'>
                     <p>Email: <a  href="mailto:hello@beecatcreative.com" target="_blank" rel="noreferrer">hello@beecatcreative.com</a></p>
@@ -83,10 +83,10 @@ export default function ContactUs() {
                 </>
                 :
                 <div className="success">
-                    <ReCAPTCHA
+                    {/* <ReCAPTCHA
                         sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
                         onChange={sendEmail}
-                    />
+                    /> */}
                     <h1>Did you know the moon has moonquakes? Weird.</h1>
                     <h1>Your message is currently traveling through time and space. Destination: our inbox. So be on the lookout for our BeeCat signal… ahem, email</h1>
                 </div>
