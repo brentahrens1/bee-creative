@@ -12,12 +12,12 @@ export const icons = [
         img: robinwood,
         alt: "Robinwood Icon",
         h: 120,
-        w: 500,
+        w: 900,
     },
     {
         img: gonzo,
         alt: "Gonzo Icon",
-        h: 500,
+        h: 750,
         w: 500,
     },
     {
@@ -29,31 +29,31 @@ export const icons = [
     {
         img: horman,
         alt: "Horman Icon",
-        h: 500,
+        h: 400,
         w: 500
     },
     {
         img: lovettsville,
         alt: "Loverttsville Icon",
-        h: 500,
+        h: 680,
         w: 500
     },
     {
         img: lswg,
         alt: "LSWG Icon",
-        h: 320,
+        h: 250,
         w: 460
     },
     {
         img: nourish,
         alt: "Nourish Icon",
-        h: 360,
+        h: 480,
         w: 460
     },
     {
         img: smiles,
         alt: "Smiles Icon",
         h: 120,
-        w: 460
+        w: 800
     },
 ]
