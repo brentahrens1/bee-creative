@@ -50,7 +50,7 @@ export default function ContactUs() {
                     <p>FB: <a  href="https://facebook.com/beecatcreative" target="_blank" rel="noreferrer">@beecatcreative</a></p>
                     <p>BeeCat Creative<br/>HQ located in Frederick, MD</p>
                 </div>
-                <form ref={form} onSubmit={toggleCaptcha} className="contact-form">
+                <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <h1>Shoot us a Message</h1>
                     <label>Name</label>
                     <div className="name-fields">
