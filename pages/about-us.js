@@ -42,7 +42,7 @@ export default function AboutUs() {
                         <p>It all starts with a conversation. At BeeCat, we take the time to dive deep into your business, focusing on industry trends, competitive landscape, and audience behavior. Then we work with you to layout a comprehensive plan that positions your brand for success. Dollar, dollar bills y&apos;all.</p>
                     </div>
                 </div>
-                <div className='about-breakdown-col'>
+                <div className='about-breakdown-col about-breakdown-col-2'>
                     <div className='about-col-content'>
                         <h2>Creating Your Brand</h2>
                         <p>After compiling research, it’s time to translate your competitive strategy into a unique look and feel that stands out in a crowded marketplace. Then we create custom content to broadcast your brand personality out into the big, wide universe. Put on your space pants and prepare for launch.</p>

@@ -122,6 +122,16 @@
             &:last-child {
                 border-bottom: none;
             }
+            &.about-breakdown-col-2 {
+                @include tablet {
+                    .about-col-content {
+                        order: 2;
+                    }
+                    .about-col-image {
+                        order: 1;
+                    }
+                }
+            }
             @include mobile {
                 padding-bottom: 2rem;
             }

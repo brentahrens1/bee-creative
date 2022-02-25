@@ -17,7 +17,7 @@ export default function ContactUs() {
     const sendEmail = (e) => {
         e.preventDefault()
     
-        emailjs.sendForm(`service_gykjvxj`, `template_71nweld`, form.current, `user_h2jSyo7kIF8oKQP7E4v9t`)
+        emailjs.sendForm(`${process.env.NEXT_PUBLIC_SERVICE}`, `${process.env.NEXT_PUBLIC_TEMPLATE}`, form.current, `${process.env.NEXT_PUBLIC_USER}`)
         .then((result) => {
             console.log(result.text)
             setIsSuccess(true)

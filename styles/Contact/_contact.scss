@@ -118,6 +118,9 @@
         font-size: $small-medium;
         line-height: $lh-small-medium;
         width: 40%;
+        @include tablet {
+            width: 100%;
+        }
 
         p {
             font-family: "rust-base";
@@ -131,7 +134,6 @@
             font-size: $small;
             line-height: $lh-small;
             order: 2;
-            text-align: center;
             padding-right: 0;
             margin-top: 5rem;
         }
