@@ -7,7 +7,7 @@ export default function WhatWeDo() {
         <main className="what-we-do">
             <Head>
                 <title>BeeCat Creative | What We Do</title>
-                <meta name="description" content="Beecat Creative What We Do" />
+                <meta name="description" content="BeeCat Creative specializes in giving business owners the gift of time" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className='what-we-do__heading'>
@@ -26,7 +26,7 @@ export default function WhatWeDo() {
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
-                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/one.png' alt="BeeCat Creative | What We Do" />
+                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/one.png' alt="BeeCat Creative | Create & Build" />
                     </div>
                     <div className='answers-content'>
                         <h2>Create & Build</h2>
@@ -35,7 +35,7 @@ export default function WhatWeDo() {
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
-                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/two.png' alt="BeeCat Creative | What We Do" />
+                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/two.png' alt="BeeCat Creative | Execute & Analyze" />
                     </div>
                     <div className='answers-content'>
                         <h2>Execute & Analyze</h2>
@@ -44,7 +44,7 @@ export default function WhatWeDo() {
                 </div>
                 <div className='answers-col'>
                     <div className='answers-image'>
-                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/three.png' alt="BeeCat Creative | What We Do" />
+                        <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/three.png' alt="BeeCat Creative | Plan & Scheme" />
                     </div>
                     <div className='answers-content'>
                         <h2>Plan & Scheme</h2>
@@ -58,7 +58,7 @@ export default function WhatWeDo() {
                 <div className='what-we-do-grid'>
                     <div className='what-we-do-grid-cell'>
                         <div className='what-we-do-grid-cell-image'>
-                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-1.png' alt="BeeCat Creative | Homepage Bee" />
+                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-1.png' alt="BeeCat Creative | LSWG Employer Branding" />
                         </div>
                         <h2>LSWG Employer Branding</h2>
                         <h3>Leverage the brand to improve employee communication and strengthen company culture.</h3>
@@ -75,7 +75,7 @@ export default function WhatWeDo() {
                         </div>
                     <div className='what-we-do-grid-cell'>
                         <div className='what-we-do-grid-cell-image'>
-                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Homepage Bee" />
+                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-3.png' alt="BeeCat Creative | Robinwood Smiles Digital Build" />
                         </div>
                         <h2>Robinwood Smiles Digital Build</h2>
                         <h3>Optimize and engage to increase brand awareness through social media.</h3>
@@ -94,7 +94,7 @@ export default function WhatWeDo() {
                     </div>
                     <div className='what-we-do-grid-cell'>
                         <div className='what-we-do-grid-cell-image'>
-                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Homepage Bee" />
+                            <Image width={150} height={150} layout="responsive" priority={true} src='/images/work/work-2.png' alt="BeeCat Creative | Lovettsville Town Commons Rebrand" />
                         </div>
                         <h2>Lovettsville Town Commons Rebrand</h2>
                         <h3>Brand Identity and Strategy to bring life to a new commercial build in Lovettsville, VA.</h3>

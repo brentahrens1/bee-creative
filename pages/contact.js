@@ -30,7 +30,7 @@ export default function ContactUs() {
         <main className="contact">
             <Head>
                 <title>BeeCat Creative | Contact Us</title>
-                <meta name="description" content="Beecat Creative Contact Us" />
+                <meta name="description" content="Let it all out. We&apos;re here for you." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className='contact__heading'>

@@ -6,7 +6,7 @@ export default function AboutUs() {
         <main className="about-us">
             <Head>
                 <title>BeeCat Creative | About Us</title>
-                <meta name="description" content="Beecat Creative About Us" />
+                <meta name="description" content="professional, wacky, creative explorers" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className="about-us__header">
@@ -24,7 +24,7 @@ export default function AboutUs() {
                     <p>We start by building deep relationships with our clients, allowing us to design better solutions for all of their creative challenges. Let us do the hard work, so you don&apos;t have to.</p>
                 </div>
                 <div className='about-message-image'>
-                    <Image width={280} height={280} layout="responsive" priority={true} src='/images/about/watermelon.png' alt="BeeCat Creative | About Us" />
+                    <Image width={280} height={280} layout="responsive" priority={true} src='/images/about/watermelon.png' alt="BeeCat Creative | Who We Are" />
                 </div>
             </section>
             <section className="about-us__breakdown">
@@ -35,7 +35,7 @@ export default function AboutUs() {
                 </div>
                 <div className='about-breakdown-col'>
                     <div className='about-col-image'>
-                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-1.png' alt="BeeCat Creative | About Us" />
+                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-1.png' alt="BeeCat Creative | Special Ingredients" />
                     </div>
                     <div className='about-col-content'>
                         <h2>Let’s Build Together</h2>
@@ -48,12 +48,12 @@ export default function AboutUs() {
                         <p>After compiling research, it’s time to translate your competitive strategy into a unique look and feel that stands out in a crowded marketplace. Then we create custom content to broadcast your brand personality out into the big, wide universe. Put on your space pants and prepare for launch.</p>
                     </div>
                     <div className='about-col-image'>
-                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-2.png' alt="BeeCat Creative | About Us" />
+                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-2.png' alt="BeeCat Creative | Creating Your Brand" />
                     </div>
                 </div>
                 <div className='about-breakdown-col'>
                     <div className='about-col-image'>
-                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-3.png' alt="BeeCat Creative | About Us" />
+                        <Image width={220} height={280} layout="responsive" priority={true} src='/images/about/robot-3.png' alt="BeeCat Creative | Measuring Impact" />
                     </div>
                     <div className='about-col-content'>
                         <h2>Measuring Impact</h2>
