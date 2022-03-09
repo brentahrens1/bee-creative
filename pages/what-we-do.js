@@ -13,7 +13,7 @@ export default function WhatWeDo() {
             <section className='what-we-do__heading'>
                 <h1>What We Do</h1>
                 <div className='about-header-image'>
-                    <Image width={250} height={280} layout="responsive" priority={true} src='/images/what-we-do/hand.png' alt="BeeCat Creative | What We Do" />
+                    <Image width={250} height={200} layout="responsive" priority={true} src='/images/what-we-do/hand.png' alt="BeeCat Creative | What We Do" />
                 </div>
             </section>
             <section className='what-we-do__message'>
