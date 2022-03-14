@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { icons } from '../data/logos'
+import Script from 'next/script'
 
 export default function WhatWeDo() {
     return (
@@ -55,7 +56,7 @@ export default function WhatWeDo() {
             <section className='what-we-do__work'>
                 <h1 className='work--header'>Our Work</h1>
                 <div className="work--video" style={{marginBottom: "3rem", marginTop: "2rem"}}>
-                    <div style={{padding: "56.25% 0 0 0", position: "relative"}}><iframe src="https://player.vimeo.com/video/686896196?h=ef49a78a2f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style={{position:"absolute",top:"0",left:"0",width:"100%",height: "100%"}} title="BeeCat Creative"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div style={{padding: "56.25% 0 0 0", position: "relative"}}><iframe src="https://player.vimeo.com/video/686896196?h=ef49a78a2f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position:"absolute",top:"0",left:"0",width:"100%",height: "100%"}} title="BeeCat Creative"></iframe></div><Script src="https://player.vimeo.com/api/player.js"></Script>
                 </div>
                 <h1>We&apos;re not shy, but we like to let our work do the talking</h1>
                 <div className='what-we-do-grid'>
