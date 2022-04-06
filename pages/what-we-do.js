@@ -30,8 +30,8 @@ export default function WhatWeDo() {
                         <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/one.png' alt="BeeCat Creative | Create & Build" />
                     </div>
                     <div className='answers-content'>
-                        <h2>Create & Build</h2>
-                        <p>Graphic Design / Content Creation /Photography / Video / 360 Digital Campaigns / Copywriting</p>
+                        <h2>Plan & Scheme</h2>
+                        <p>Brand Identity and Strategy / Employer Brand / Research and Trend Forcasting / Digital Strategy</p>
                     </div>
                 </div>
                 <div className='answers-col'>
@@ -39,8 +39,8 @@ export default function WhatWeDo() {
                         <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/two.png' alt="BeeCat Creative | Execute & Analyze" />
                     </div>
                     <div className='answers-content'>
-                        <h2>Execute & Analyze</h2>
-                        <p>Social Media and Community Management / Media Buying / Analytics and Insight Reports / Strategic Partnership / Digital Optimization / Digital Audits / Influencer Strategy and Management</p>
+                        <h2>Create & Build</h2>
+                        <p>Graphic Design / Content Creation /Photography / Video / 360 Digital Campaigns / Copywriting</p>
                     </div>
                 </div>
                 <div className='answers-col'>
@@ -48,8 +48,8 @@ export default function WhatWeDo() {
                         <Image width={160} height={280} layout="responsive" priority={true} src='/images/what-we-do/three.png' alt="BeeCat Creative | Plan & Scheme" />
                     </div>
                     <div className='answers-content'>
-                        <h2>Plan & Scheme</h2>
-                        <p>Brand Identity and Strategy / Employer Brand / Research and Trend Forcasting / Digital Strategy</p>
+                        <h2>Execute & Analyze</h2>
+                        <p>Social Media and Community Management / Media Buying / Analytics and Insight Reports / Strategic Partnership / Digital Optimization / Digital Audits / Influencer Strategy and Management</p>
                     </div>
                 </div>
             </section>
